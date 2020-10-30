@@ -1,0 +1,166 @@
+@import 'abstracts/variables', 'mixins/breakpoints'; // PARTIALS
+
+/*========== HEADER ==========*/
+header {
+    .navbar .nav-link {
+        font-size: 18px;
+        color: #000 !important;
+    }
+    .button-buy {
+        background: #000;
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+}
+/*========== END HEADER ==========*/
+
+/*========== BANNER SECTION ==========*/
+.banner {
+    background: url('../images/banner.jpg') center/cover no-repeat;
+    height: 200vh;
+    &__contents
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    p {
+        font-size: 18px;
+        @include media-min-lg {
+            width: 50%;
+        }
+    }
+    &__item-two {
+        @include media-min-md {
+            border-right: 2px solid #acacac;
+            border-left: 2px solid #acacac;
+        }
+    }
+    @include media-min-md {
+        height: 100vh;
+    }
+}
+/*========== END BANNER SECTION ==========*/
+
+/*========== SHOP NOW SECTION ==========*/
+.shop-now {
+    &__item {
+        background: $bg-one;
+        h5 {
+            font-size: 16px;
+        }
+        a {
+            color: #000;
+            border-bottom: 2px solid #000;
+        }
+    }
+}
+/*========== END SHOP NOW SECTION ==========*/
+
+/*========== BOOKS SECTION ==========*/
+.books {
+    background: $bg-one;
+}
+/*========== END BOOKS SECTION ==========*/
+
+/*========== COLLECTIONS SECTION ==========*/
+.collections {
+    &__item-one {
+        background: url('../images/learn-more.jpg') center/cover no-repeat;
+        height: 100%;
+    }
+    &__item-two {
+        background: #e7d8d5;
+        height: 100%;
+    }
+}
+/*========== END COLLECTIONS SECTION ==========*/
+
+/*========== PRICE SECTION ==========*/
+.card {
+    background: $bg-one;
+    max-width: 360px;
+    .card-header {
+        background: $bg-one;
+        border-bottom: 1px solid rgb(143, 143, 143);
+    }
+    .card-body {
+        span {
+            color: #bc9d71;
+            padding-right: 10px;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+    }
+    p {
+        font-size: 18px;
+    }
+}
+/*========== END PRICE SECTION ==========*/
+
+/*========== CUSTOMER SECTION ==========*/
+.customer {
+    .review {
+        background: $bg-one;
+        img {
+            width: 75px;
+        }
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+/*========== END CUSTOMER SECTION ==========*/
+
+/*========== NEWSLETTER SECTION ==========*/
+.newsletter {
+    background: url('../images/newsletter.jpg') center/cover no-repeat;
+    height: 100%;
+    &__content {
+        background-color: rgba(255, 255, 255, 0.8);
+        max-width: 1000px;
+        margin: auto;
+    }
+    input[type=email] {
+        max-width: 500px;
+    }
+    input[type=submit] {
+        max-width: 150px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+/*========== END NEWSLETTER SECTION ==========*/
+
+/*========== SOCIAL SECTION ==========*/
+.social {
+    a {
+        font-size: 20px;
+    }
+    i {
+        padding-right: 10px;
+    }
+}
+/*========== END SOCIAL SECTION ==========*/
+
+/*========== MAP SECTION ==========*/
+.map {
+    filter: grayscale(1);
+}
+/*========== END MAP SECTION ==========*/
+
+/*========== FOOTER SECTION ==========*/
+footer {
+    background: $bg-one;
+    form {
+        max-width: 300px;
+        .form-control {
+        height: auto;
+        }
+    }
+}
+/*========== END FOOTER SECTION ==========*/

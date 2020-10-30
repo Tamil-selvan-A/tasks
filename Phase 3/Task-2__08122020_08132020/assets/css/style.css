@@ -1,0 +1,12 @@
+/*========== HEADER ==========*/
+header .nav-link:hover {
+  color: #fff !important;
+}
+
+/*========== END HEADER ==========*/
+/*========== WELCOME ==========*/
+.welcome {
+  background: #e9ecef;
+}
+
+/*========== END WELCOME ==========*/

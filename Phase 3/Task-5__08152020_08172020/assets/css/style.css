@@ -1,0 +1,178 @@
+/*========== HEADER ==========*/
+header .navbar .nav-link {
+  font-size: 18px;
+  color: #000 !important;
+}
+
+header .button-buy {
+  background: #000;
+  font-size: 18px;
+  padding: 10px 30px;
+}
+
+/*========== END HEADER ==========*/
+/*========== BANNER SECTION ==========*/
+.banner {
+  background: url("../images/banner.jpg") center/cover no-repeat;
+  height: 200vh;
+}
+
+.banner__contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.banner p {
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .banner p {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner__item-two {
+    border-right: 2px solid #acacac;
+    border-left: 2px solid #acacac;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 100vh;
+  }
+}
+
+/*========== END BANNER SECTION ==========*/
+/*========== SHOP NOW SECTION ==========*/
+.shop-now__item {
+  background: #efefef;
+}
+
+.shop-now__item h5 {
+  font-size: 16px;
+}
+
+.shop-now__item a {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+/*========== END SHOP NOW SECTION ==========*/
+/*========== BOOKS SECTION ==========*/
+.books {
+  background: #efefef;
+}
+
+/*========== END BOOKS SECTION ==========*/
+/*========== COLLECTIONS SECTION ==========*/
+.collections__item-one {
+  background: url("../images/learn-more.jpg") center/cover no-repeat;
+  height: 100%;
+}
+
+.collections__item-two {
+  background: #e7d8d5;
+  height: 100%;
+}
+
+/*========== END COLLECTIONS SECTION ==========*/
+/*========== PRICE SECTION ==========*/
+.card {
+  background: #efefef;
+  max-width: 360px;
+}
+
+.card .card-header {
+  background: #efefef;
+  border-bottom: 1px solid #8f8f8f;
+}
+
+.card .card-body span {
+  color: #bc9d71;
+  padding-right: 10px;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+/*========== END PRICE SECTION ==========*/
+/*========== CUSTOMER SECTION ==========*/
+.customer .review {
+  background: #efefef;
+}
+
+.customer .review img {
+  width: 75px;
+}
+
+.customer p {
+  font-size: 18px;
+}
+
+/*========== END CUSTOMER SECTION ==========*/
+/*========== NEWSLETTER SECTION ==========*/
+.newsletter {
+  background: url("../images/newsletter.jpg") center/cover no-repeat;
+  height: 100%;
+}
+
+.newsletter__content {
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 1000px;
+  margin: auto;
+}
+
+.newsletter input[type=email] {
+  max-width: 500px;
+}
+
+.newsletter input[type=submit] {
+  max-width: 150px;
+}
+
+.newsletter p {
+  font-size: 18px;
+}
+
+/*========== END NEWSLETTER SECTION ==========*/
+/*========== SOCIAL SECTION ==========*/
+.social a {
+  font-size: 20px;
+}
+
+.social i {
+  padding-right: 10px;
+}
+
+/*========== END SOCIAL SECTION ==========*/
+/*========== MAP SECTION ==========*/
+.map {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+/*========== END MAP SECTION ==========*/
+/*========== FOOTER SECTION ==========*/
+footer {
+  background: #efefef;
+}
+
+footer form {
+  max-width: 300px;
+}
+
+footer form .form-control {
+  height: auto;
+}
+
+/*========== END FOOTER SECTION ==========*/

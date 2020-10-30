@@ -1,0 +1,67 @@
+/*========== BANNER SECTION ==========*/
+.banner {
+  background: url("../images/banner.jpg") center/cover no-repeat;
+}
+
+.banner h1 {
+  font-size: 26px;
+}
+
+@media (min-width: 768px) {
+  .banner h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner input[type=email] {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 90vh;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner__container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-bottom {
+    height: 50vh;
+  }
+}
+
+/*========== END BANNER SECTION ==========*/
+/*========== SPECIALS ==========*/
+.specials i {
+  font-size: 60px;
+}
+
+/*========== END SPECIALS ==========*/
+/*========== PEOPLE ==========*/
+.people img {
+  width: 180px;
+  -webkit-box-shadow: 1px 3px 9px 3px #b4b4b4;
+          box-shadow: 1px 3px 9px 3px #b4b4b4;
+  margin-bottom: 20px;
+}
+
+/*========== END PEOPLE ==========*/
