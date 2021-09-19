@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <!--===== GOOGLE FONT =====-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!--===== FONT AWESOME =====-->
+    <script src="https://kit.fontawesome.com/d857be8293.js" crossorigin="anonymous"></script>
+
+    <!--===== STYLE SHEET =====-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="panel-container">
+        <!--===== SIDEBAR =====-->
+        <section class="sidebar" id="nav">
+            <div class="sidebar__top admin">
+                <div class="flex">
+                    <a href="index.html"><img src="assets/images/logo.svg" alt="logo" class="logo"></a>
+                    <i class="fas fa-list"></i>
+                </div>
+                <h3 class="admin__name">John Deo</h3>
+                <a href="mailto:example@gmail.com" class="admin__email">example@gmail.com</a>
+                <img src="assets/images/profile.png" alt="profile" class="admin__photo">
+            </div>
+            <div class="sidebar__bottom">
+                <a href="index.html"><i class="fas fa-desktop"></i>DASHBOARD</a>
+                <a href="users.html"><i class="fas fa-user-friends"></i>USERS LIST</a>
+                <a href="add-user.html"><i class="fas fa-user-edit"></i>ADD USER</a>
+            </div>
+        </section>
+        <!--===== END SIDEBAR =====-->
+
+        <!--===== MAIN PANEL =====-->
+        <section class="panel-right">
+            <!--===== HEADER =====-->
+            <header class="flex">
+                <div>
+                    <a href="#"><i class="far fa-calendar-alt"></i></a>
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                    <a href="#"><i class="fas fa-user-tag"></i></a>
+                    <a href="#"><i class="far fa-check-square"></i></a>
+                </div>
+                <div>
+                    <a href="#"><i class="fas fa-user-tie"></i></a>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </header>
+            <!--===== END HEADER =====-->
+
+            <!--===== MAIN CONTENTS =====-->
+            <main>
+                <div class="main-panel-container">
+
+                    <!--===== COUNT =====-->
+                    <div class="count">
+                        <div class="count__item count__user">
+                            <i class="fas fa-users"></i>
+                            <p class="count__title">USERS</p>
+                            <p class="count__data">3920</p>
+                        </div>
+                        <div class="count__item count__user">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <p class="count__title">CLIENTS</p>
+                            <p class="count__data">62721</p>
+                        </div>
+                        <div class="count__item count__user">
+                            <i class="far fa-file-alt"></i>
+                            <p class="count__title">PROJECTS</p>
+                            <p class="count__data">483</p>
+                        </div>
+                        <div class="count__item count__user">
+                            <i class="far fa-folder-open"></i>
+                            <p class="count__title">OLD PROJECTS</p>
+                            <p class="count__data">827</p>
+                        </div>
+                    </div>
+                    <!--===== END COUNT =====-->
+
+                    <!--===== USERD BASED ON DEVICE =====-->
+                    <div class="devices">
+                        <div class="devices__item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <p class="devices__name">MOBILE USERS</p>
+                            <p>3838</p>
+                        </div>
+                        <div class="devices__item">
+                            <i class="fas fa-tablet-alt"></i>
+                            <p class="devices__name">TABLET USERS</p>
+                            <p>438</p>
+                        </div>
+                        <div class="devices__item">
+                            <i class="fas fa-laptop"></i>
+                            <p class="devices__name">LAPTOP USERS</p>
+                            <p>12838</p>
+                        </div>
+                        <div class="devices__item">
+                            <i class="fas fa-desktop"></i>
+                            <p class="devices__name">DESKTOP USERS</p>
+                            <p>84831</p>
+                        </div>
+                    </div>
+
+                    <!--===== SOCIAL MEDIA FOLLWERS =====-->
+                    <div class="followers">
+                        <div class="followers__item flex">
+                            <div class="flex">
+                                <p class="followers__count">50%</p>
+                                <div class="followers__details">
+                                    <h4 class="followers__title">Facebook Followers</h4>
+                                    <p><i class="far fa-check-circle"></i>8383 Since Last Week</p>
+                                </div>
+                            </div>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="followers__item flex">
+                            <div class="flex">
+                                <p class="followers__count">60%</p>
+                                <div class="followers__details">
+                                    <h4 class="followers__title">Twitter Followers</h4>
+                                    <p><i class="far fa-check-circle"></i>372 Since Last Week</p>
+                                </div>
+                            </div>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="followers__item flex">
+                            <div class="flex">
+                                <p class="followers__count">80%</p>
+                                <div class="followers__details">
+                                    <h4 class="followers__title">Instagram Followers</h4>
+                                    <p><i class="far fa-check-circle"></i>2721 Since Last Week</p>
+                                </div>
+                            </div>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="followers__item flex">
+                            <div class="flex">
+                                <p class="followers__count">69%</p>
+                                <div class="followers__details">
+                                    <h4 class="followers__title">Youtube Followers</h4>
+                                    <p><i class="far fa-check-circle"></i>4732 Since Last Week</p>
+                                </div>
+                            </div>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <!--===== END SOCIAL MEDIA FOLLWERS =====-->
+
+                    <div class="percentage-container">
+                        <!--===== USERS AGE=====-->
+                        <div class="percentage">
+                            <h3>Users Based on Age</h3>
+                            <div class="percentage__container">
+                                <p>Age: 18 to 28</p>
+                                <div class="percentage__background">
+                                    <div class="percentage__value"></div>
+                                </div>
+                            </div>
+                            <div class="percentage__container">
+                                <p>Age: 28 to 48</p>
+                                <div class="percentage__background">
+                                    <div class="percentage__value percentage__value--two"></div>
+                                </div>
+                            </div>
+                            <div class="percentage__container">
+                                <p>Age: 48 to 68</p>
+                                <div class="percentage__background">
+                                    <div class="percentage__value age__value--three"></div>
+                                </div>
+                            </div>
+                            <div class="percentage__container">
+                                <p>Age: 68 Above</p>
+                                <div class="percentage__background">
+                                    <div class="percentage__value age__value--four"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--===== END USERS AGE =====-->
+
+                        <!--===== USERS COUNTRY =====-->
+                        <div class="percentage">
+                            <h3>Users Based on Country</h3>
+                            <div class="percentage__container">
+                                <p>America</p>
+                                <div class="percentage__background">
+                                    <div class="percentage__value"></div>
+                                </div>
+                            </div>
+                            <div class="percentage__container">
+                                <p>India</p>
+                                <div class="percentage__background">
+                                    <div class="percentage__value percentage__value--two"></div>
+                                </div>
+                            </div>
+                            <div class="percentage__container">
+                                <p>China</p>
+                                <div class="percentage__background">
+                                    <div class="percentage__value age__value--three"></div>
+                                </div>
+                            </div>
+                            <div class="percentage__container">
+                                <p>Japan</p>
+                                <div class="percentage__background">
+                                    <div class="percentage__value age__value--four"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--===== END USERS COUNTRY =====-->
+                    </div>
+                </div>
+            </main>
+            <!--===== END MAIN CONTENTS =====-->
+
+            <!--===== FOOTER =====-->
+            <footer>
+                <p>&copy;2020. All Rights Reserved</p>
+            </footer>
+            <!--===== END FOOTER =====-->
+        </section>
+        <!--===== END MAIN PANEL =====-->
+    </section>
+
+    <!--===== JAVASCRIPT =====-->
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>

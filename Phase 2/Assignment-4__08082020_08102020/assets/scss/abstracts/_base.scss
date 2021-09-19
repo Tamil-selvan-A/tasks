@@ -1,0 +1,33 @@
+/*========== BASE STYLES ==========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+i {
+    padding: 10px;
+    cursor: pointer;
+}
+a:hover, i:hover {
+    color: $link-hover;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.panel-container {
+    @include media-min-lg {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+}
+.panel-right {
+    width: 100%;
+}
+/*========== END BASE STYLES ==========*/

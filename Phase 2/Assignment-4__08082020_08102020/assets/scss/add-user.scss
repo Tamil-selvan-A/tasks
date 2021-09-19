@@ -1,0 +1,45 @@
+@import 'abstracts/variables', 'mixins/breakpoints', 'abstracts/base', 'layouts/sidebar', 'layouts/header','layouts/footer'; //PARTIALS
+
+/*========== ADD USER FORM ==========*/
+.add-user {
+    background-color: #242833;
+    text-align: center;
+    padding-bottom: 20px;
+    h3 {
+        color: #ffffff;
+        padding: 20px;
+    }
+    form {
+        background-color: $dark-primary;
+        padding: 20px 10px;
+        max-width: 600px;
+        margin: auto;
+        border-radius: 6px;
+    }
+    input, select {
+        padding: 10px 20px;
+        background-color: $dark-secondary;
+        border: 2px solid #4e4e4e;
+        margin: 20px auto;
+        display: block;
+        width: 80%;
+        border-radius: 6px;
+        color: #ffffff;
+    }
+    input[type=submit], input[type=reset] {
+        background-color: #01494e;
+        max-width: 200px;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        @include media-min-md {
+            margin: 20px;
+        }
+    }
+    .form-submit {
+        @include media-min-md {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+/*========== END ADD USER FORM ==========*/

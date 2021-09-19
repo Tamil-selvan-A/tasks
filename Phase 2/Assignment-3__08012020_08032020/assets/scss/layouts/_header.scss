@@ -1,0 +1,44 @@
+/*========== HEADER ==========*/
+header {
+    padding: 20px !important;
+    nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #0b001b;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        text-align: center;
+        transition: height 0.4s linear;
+        ul {
+            padding: 10px;
+            list-style-type: none;
+            @include media-min-md {
+                @include flex;
+                justify-content: flex-end;
+            }
+        }
+        a {
+            padding: 10px;
+            display: block;
+            font-weight: 500;
+            color: $sub-heading;
+        }
+        @include media-min-md {
+            position: static;
+            height: 100%;
+            background: transparent;
+        }
+    }
+    .fa-bars {
+        cursor: pointer;
+        @include media-min-md {
+            display: none;
+        }
+    }
+}
+.responsive-nav {
+    height: 100vh;
+}
+/*========== END HEADER ==========*/

@@ -1,0 +1,61 @@
+/*========== SIDEBAR ==========*/
+.sidebar {
+    min-width: 270px;
+    position: absolute;
+    left: -1000px;
+    transition: all 0.3s;
+    z-index: 9;
+    background-color: $dark-secondary;
+    &__top {
+        background-color: $dark-primary;
+        color: #fff;
+        padding: 20px 15px;
+        height: 230px;
+        .logo {
+            width: 40px;
+        }
+    }
+    .fa-list {
+        font-size: 20px;
+    }
+    .admin {
+        position: relative;
+        text-align: center;
+        &__name {
+            padding: 20px 10px;
+        }
+        &__email {
+            color: #fff;
+            padding: 10px;
+        }
+        &__photo {
+            position: absolute;
+            left: 50%;
+            bottom: -80px;
+            width: 80px;
+            transform: translate(-50%, -50%);
+            border: 5px solid rgb(78, 78, 78);
+            border-radius: 50%;
+        }
+    }
+    &__bottom {
+        padding: 40px 15px 20px;
+        a {
+            color: #fff;
+            display: block;
+            padding: 10px 20px;
+            border: 2px solid $border;
+            margin: 20px;
+            background-color: $dark-primary;
+            border-radius: 6px;
+        }
+    }
+    @include media-min-lg {
+         position: static;
+         height: unset;
+    }
+}
+.responsive-nav {
+    left: 0;
+}
+/*========== END SIDEBAR ==========*/

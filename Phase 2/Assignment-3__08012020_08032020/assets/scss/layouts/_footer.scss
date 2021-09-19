@@ -1,0 +1,34 @@
+/*========== FOOTER ==========*/
+footer {
+    background-color: $black;
+    p {
+        color: $gray;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+.footer {
+    padding: 40px 20px;
+    &__item {
+        padding-bottom: 20px;
+    }
+    h3 {
+        color: $white;
+        padding: 20px 0;
+    }
+    a {
+        color: $sub-heading;
+        display: block;
+        padding: 6px 0;
+    }
+    .footer-social {
+        background-color: $button;
+        border-radius: 6px;
+        padding: 6px 10px;
+    }
+    @include media-min-md {
+        @include flex;
+    }
+}
+/*========== END FOOTER ==========*/

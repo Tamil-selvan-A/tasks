@@ -1,0 +1,363 @@
+/*========== BASE STYLES ==========*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  padding: 10px;
+  cursor: pointer;
+}
+
+a:hover, i:hover {
+  color: #ff004c;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 992px) {
+  .panel-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+.panel-right {
+  width: 100%;
+}
+
+/*========== END BASE STYLES ==========*/
+/*========== SIDEBAR ==========*/
+.sidebar {
+  min-width: 270px;
+  position: absolute;
+  left: -1000px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 9;
+  background-color: #2d323e;
+}
+
+.sidebar__top {
+  background-color: #1e2129;
+  color: #fff;
+  padding: 20px 15px;
+  height: 230px;
+}
+
+.sidebar__top .logo {
+  width: 40px;
+}
+
+.sidebar .fa-list {
+  font-size: 20px;
+}
+
+.sidebar .admin {
+  position: relative;
+  text-align: center;
+}
+
+.sidebar .admin__name {
+  padding: 20px 10px;
+}
+
+.sidebar .admin__email {
+  color: #fff;
+  padding: 10px;
+}
+
+.sidebar .admin__photo {
+  position: absolute;
+  left: 50%;
+  bottom: -80px;
+  width: 80px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 5px solid #4e4e4e;
+  border-radius: 50%;
+}
+
+.sidebar__bottom {
+  padding: 40px 15px 20px;
+}
+
+.sidebar__bottom a {
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  border: 2px solid #424242;
+  margin: 20px;
+  background-color: #1e2129;
+  border-radius: 6px;
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    position: static;
+    height: unset;
+  }
+}
+
+.responsive-nav {
+  left: 0;
+}
+
+/*========== END SIDEBAR ==========*/
+/*========== HEADER ==========*/
+header {
+  padding: 20px 10px;
+  background-color: #2d323e;
+}
+
+header i {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  header {
+    max-width: calc(100vw - 270px);
+  }
+}
+
+/*========== END HEADER ==========*/
+/*========== FOOTER ==========*/
+footer {
+  text-align: center;
+  background-color: #1e2129;
+  color: #fff;
+  padding: 10px;
+}
+
+/*========== END FOOTER ==========*/
+/*========== COUNT SECTION ==========*/
+.count {
+  padding: 20px 10px;
+}
+
+.count__item {
+  padding: 20px;
+  margin: 20px;
+  color: #fff;
+  background-color: #1e2129;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.count__item i {
+  font-size: 50px;
+}
+
+@media (min-width: 576px) {
+  .count__item {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .count__item {
+    width: 20%;
+  }
+}
+
+@media (min-width: 576px) {
+  .count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/*========== END COUNT SECTION ==========*/
+/*========== DEVICES ==========*/
+.devices {
+  padding: 20px;
+  margin: 20px 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #2d323e;
+  border-radius: 6px;
+}
+
+.devices__item {
+  border-bottom: 1px solid #424242;
+  padding: 10px;
+}
+
+.devices__item i {
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  .devices__item {
+    border-bottom: none;
+  }
+}
+
+.devices__name {
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .devices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/*========== END DEVICES ==========*/
+/*========== SOCIAL MEDIA FOLLOWERS ==========*/
+.followers {
+  padding: 10px;
+  color: #fff;
+}
+
+@media (min-width: 576px) {
+  .followers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.followers__item {
+  margin: 10px auto;
+  background-color: #2d323e;
+}
+
+@media (min-width: 576px) {
+  .followers__item {
+    width: 46%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .followers__item {
+    width: 47%;
+  }
+}
+
+.followers__title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.followers__count {
+  background-color: #1e2129;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.followers__details p {
+  font-size: 12px;
+}
+
+.followers__details i {
+  padding-left: 0;
+}
+
+/*========== END SOCIAL MEDIA FOLLWERS ==========*/
+/*========== AGE ==========*/
+.percentage {
+  padding: 20px;
+  background-color: #1e2129;
+  border-radius: 6px;
+  color: #fff;
+  margin: 20px;
+}
+
+.percentage__container {
+  padding: 10px 0;
+}
+
+.percentage__background {
+  background-color: #2d323e;
+  height: 6px;
+  margin: 10px auto;
+}
+
+.percentage__value {
+  background-color: #ff004c;
+  height: 6px;
+  width: 50%;
+}
+
+.percentage__value--two {
+  width: 75%;
+}
+
+.percentage__value--three {
+  width: 30%;
+}
+
+.percentage__value--four {
+  width: 90%;
+}
+
+.percentage h3 {
+  font-weight: 500;
+}
+
+.percentage p {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .percentage {
+    width: 46%;
+  }
+}
+
+@media (min-width: 768px) {
+  .percentage-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/*========== END AGE ==========*/

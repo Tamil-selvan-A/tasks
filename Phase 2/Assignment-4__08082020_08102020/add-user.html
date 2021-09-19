@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD USERS</title>
+
+    <!--===== GOOGLE FONT =====-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!--===== FONT AWESOME =====-->
+    <script src="https://kit.fontawesome.com/d857be8293.js" crossorigin="anonymous"></script>
+
+    <!--===== STYLE SHEET =====-->
+    <link rel="stylesheet" href="assets/css/add-user.css">
+</head>
+
+<body>
+    <section class="panel-container">
+        <!--===== SIDEBAR =====-->
+        <section class="sidebar" id="nav">
+            <div class="sidebar__top admin">
+                <div class="flex">
+                    <a href="index.html"><img src="assets/images/logo.svg" alt="logo" class="logo"></a>
+                    <i class="fas fa-list"></i>
+                </div>
+                <h3 class="admin__name">John Deo</h3>
+                <a href="mailto:example@gmail.com" class="admin__email">example@gmail.com</a>
+                <img src="assets/images/profile.png" alt="profile" class="admin__photo">
+            </div>
+            <div class="sidebar__bottom">
+                <a href="index.html"><i class="fas fa-desktop"></i>DASHBOARD</a>
+                <a href="users.html"><i class="fas fa-user-friends"></i>USERS LIST</a>
+                <a href="#"><i class="fas fa-user-edit"></i>ADD USER</a>
+            </div>
+        </section>
+        <!--===== END SIDEBAR =====-->
+
+        <!--===== MAIN PANEL =====-->
+        <section class="panel-right">
+            <!--===== HEADER =====-->
+            <header class="flex">
+                <div>
+                    <a href="#"><i class="far fa-calendar-alt"></i></a>
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                    <a href="#"><i class="fas fa-user-tag"></i></a>
+                    <a href="#"><i class="far fa-check-square"></i></a>
+                </div>
+                <div>
+                    <a href="#"><i class="fas fa-user-tie"></i></a>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </header>
+            <!--===== END HEADER =====-->
+
+            <!--===== MAIN CONTENTS =====-->
+            <main>
+                <div class="main-panel-container add-user">
+                    <h3>ADD USER FORM</h3>
+                    <form>
+                        <input type="text" placeholder="Enter First Name" required>
+                        <input type="text" placeholder="Enter Last Name" required>
+                        <input type="email" placeholder="Enter Email" required>
+                        <input type="tel" placeholder="Enter Mobile Number" required>
+                        <input type="number" placeholder="Enter Your Age">
+                        <input type="text" placeholder="Enter Your Country">
+                        <select name="gender">
+                            <option value="male">I Am Male</option>
+                            <option value="female">I Am Female</option>
+                        </select>
+                        <div class="form-submit">
+                            <input type="submit" value="ADD USER">
+                            <input type="reset" value="RESET">
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <!--===== END MAIN CONTENTS =====-->
+
+            <!--===== FOOTER =====-->
+            <footer>
+                <p>&copy;2020. All Rights Reserved</p>
+            </footer>
+            <!--===== END FOOTER =====-->
+        </section>
+        <!--===== END MAIN PANEL =====-->
+    </section>
+
+    <!--===== JAVASCRIPT =====-->
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>

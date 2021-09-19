@@ -1,0 +1,148 @@
+
+@import 'abstracts/variables', 'mixins/breakpoints', 'abstracts/base', 'layouts/sidebar', 'layouts/header','layouts/footer'; //PARTIALS
+
+/*========== COUNT SECTION ==========*/
+.count {
+    padding: 20px 10px;
+    &__item {
+        padding: 20px;
+        margin: 20px;
+        color: #fff;
+        background-color: $dark-primary;
+        text-align: center;
+        border-radius: 6px;
+        i {
+            font-size: 50px;
+        }
+        @include media-min-sm {
+            width: 40%;
+        }
+        @include media-min-xl {
+            width: 20%;
+        }
+    }
+    @include media-min-sm {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+/*========== END COUNT SECTION ==========*/
+
+/*========== DEVICES ==========*/
+.devices {
+    padding: 20px;
+    margin: 20px 30px;
+    color: #fff;
+    text-align: center;
+    background-color: $dark-secondary;
+    border-radius: 6px;
+    &__item {
+        border-bottom: 1px solid $border;
+        padding: 10px;
+        i {
+            font-size: 40px;
+        }
+        @include media-min-md {
+            border-bottom: none;
+        }
+    }
+    &__name {
+        padding: 10px;
+    }
+    @include media-min-md {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/*========== END DEVICES ==========*/
+
+/*========== SOCIAL MEDIA FOLLOWERS ==========*/
+.followers {
+    padding: 10px;
+    color: #fff;
+    // background-color: $dark-primary;
+    @include media-min-sm {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        margin: 10px auto;
+        background-color: $dark-secondary;
+        @include media-min-sm {
+            width: 46%;
+            margin: 10px;
+        }
+        @include media-min-md {
+            width: 47%;
+        }
+      
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__count {
+        background-color: $dark-primary;
+        padding: 8px;
+        border-radius: 4px;
+        margin: 10px;
+    }
+    &__details {
+        p {
+            font-size: 12px;
+        }
+        i {
+            padding-left: 0;
+        }
+    }
+}
+/*========== END SOCIAL MEDIA FOLLWERS ==========*/
+
+/*========== AGE ==========*/
+.percentage {
+    padding: 20px;
+    background-color: $dark-primary;
+    border-radius: 6px;
+    color: #fff;
+    margin: 20px;
+    &__container {
+        padding: 10px 0;
+    }
+    &__background {
+        background-color: $dark-secondary;
+        height: 6px;
+        margin: 10px auto;
+    }
+    &__value {
+        background-color: $link-hover;
+        height: 6px;
+        width: 50%;
+    }
+    &__value--two {
+        width: 75%;
+    }
+    &__value--three {
+        width: 30%;
+    }
+    &__value--four {
+        width: 90%;
+    }
+    h3 {
+        font-weight: 500;
+    }
+    p {
+        font-size: 14px;
+    }
+    @include media-min-md {
+        width: 46%;
+    }
+}
+.percentage-container {
+    @include media-min-md {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/*========== END AGE ==========*/

@@ -1,0 +1,64 @@
+@import 'abstracts/variables', 'mixins/breakpoints', 'abstracts/base', 'layouts/sidebar', 'layouts/header','layouts/footer'; //PARTIALS
+
+/*========== USERS LIST VIEW ==========*/
+.main-panel-container {
+    padding: 10px;
+}
+.users {
+    padding: 20px 0;
+    margin: 20px auto;
+    border-radius: 6px;
+    background-color: $dark-primary;
+    max-width: 500px;
+    li {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        color: #fff;
+        border-bottom: 1px solid #3f3f3f;
+        img {
+            width: 30px;
+        }
+        p {
+            padding: 4px;
+            font-size: 14px;
+        }
+    }
+}
+/*========== END USERS LIST VIEW ==========*/
+
+/*========== USERS GRID VIEW ==========*/
+.grid-view {
+    padding: 20px 0;
+    margin: 20px auto;
+    border-radius: 6px;
+    background-color: $dark-primary;
+    @include media-min-md {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+.users__item {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background-color: $dark-secondary;
+    margin: 20px auto;
+    min-width: 300px;
+    img {
+        width: 60px;
+        margin: 10px auto;
+    }
+    p {
+        background-color: $dark-primary;
+        padding: 6px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    @include media-min-md {
+        width: 43%;
+        margin: 20px;
+    }
+}
+/*========== USERS GRID VIEW ==========*/
