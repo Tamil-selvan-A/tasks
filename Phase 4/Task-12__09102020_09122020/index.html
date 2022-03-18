@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task-12</title>
+
+    <!--========== BOOTSTRAP CSS ==========-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--========== GOOGLE FONT ==========-->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!--========== FONT AWESOME ==========-->
+    <script src="https://kit.fontawesome.com/d857be8293.js" crossorigin="anonymous"></script>
+
+    <!--========== JQUERY CONFIRM CSS ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+
+    <!--========== CUSTOM CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-dark">
+    <!--========== HEADER ==========-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-md fixed-top shadow">
+            <a class="navbar-brand">jQuery</a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#password-strength">Paswword Strength<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#slide">Slide Show</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#star">Star Rating</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#drag-drop">Drag & Drop</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--========== END HEADER ==========-->
+
+    <!--========== MAIN ==========-->
+    <main class="text-white container">
+        <!--========== PASSWORD STRENTH ==========-->
+        <section class="mt-5 py-5" id="password-strength">
+            <h4 class="text-center">PASSWORD STRENTH</h4>
+            <form class="py-3 mx-auto">
+                <div class="form-group">
+                    <label for="password">Enter Your Password</label>
+                    <input id="password" class="form-control" type="password">
+                </div>
+            </form>
+            <div class="progress mx-auto">
+                <div class="progress-bar bg-primary" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <ul class="text-secondary mt-4" id="password-tips">
+                <li>Keep the password length more than 8 characters</li>
+                <li>Include atleast one uppercase</li>
+                <li>Include atleast one lowercase</li>
+                <li>Include atleast one number</li>
+                <li>Include atleast one special character</li>
+            </ul>
+        </section>
+        <!--========== END PASSWORD STRENTH ==========-->
+
+        <!--========== SLIDE SHOW ==========-->
+        <section class="py-5" id="slide">
+            <h4 class="text-center">SLIDE SHOW</h4>
+            <div class="slider-container">
+            </div>
+        </section>
+        <!--========== END SLIDE SHOW ==========-->
+
+        <!--========== STAR RATING SECTION ==========-->
+        <section class="text-center" id="star">
+            <h4 class="mt-5">STAR RATING</h4>
+            <div class="text-center p-4">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Rating review</p>
+        </section>
+        <!--========== END STAR RATING SECTION ==========-->
+
+        <!--========== FORM SECTION ==========-->
+        <section id="form">
+            <h4 class="mt-5 text-center">REGISTRATION FORM</h4>
+            <form class="bg-secondary p-3 mx-auto rounded" id="registration">
+                <div class="my-3">
+                    <input class="form-control" type="text" placeholder="Enter Your Name" id="name">
+                    <small class="p-2 d-block" id="name-error"></small>
+                </div>
+                <div class="my-3">
+                    <input class="form-control" type="tel" placeholder="Enter Your Email" id="email">
+                    <small class="p-2 d-block" id="email-error"></small>
+                </div>
+                <div class="my-3">
+                    <input class="form-control" type="tel" placeholder="Enter Your Mobile Number" id="mobile">
+                    <small class="p-2 d-block" id="mobile-error"></small>
+                </div>
+                <div class="my-3">
+                    <input class="form-control" type="text" placeholder="Enter Your Age" id="age">
+                    <small class="p-2 d-block" id="age-error"></small>
+                </div>
+                <input type="button" value="SUBMIT" class="btn btn-light d-block mx-auto px-5" id="submit">
+            </form>
+        </section>
+        <!--========== END FORM SECTION ==========-->
+
+        <!--========== DRAG AND DROP SECTION ==========-->
+        <section class="py-5" id="drag-drop">
+            <h4 class="my-5 text-center">DRAG AND DROP</h4>
+            <div class="row justify-content-around text-center drag-drop">
+                <div class="bg-secondary text-dark p-4 col-lg-5 my-3 rounded" id="drag">
+                    <h5 class="bg-warning p-3">DRAG FROM HERE</h5>
+                    <p class="bg-light rounded p-2 my-2">Element one</p>
+                    <p class="bg-light rounded p-2 my-2">Element two</p>
+                    <p class="bg-light rounded p-2 my-2">Element three</p>
+                </div>
+                <div class="bg-secondary text-dark p-4 col-lg-5 my-3 rounded" id="drop">
+                    <h5 class="bg-warning p-3">DROP HERE</h5>
+                </div>
+            </div>
+        </section>
+        <!--========== END DRAG AND DROP SECTION ==========-->
+    </main>
+    <!--========== END MAIN ==========-->
+
+    <!--========== JQUERY UI CSS ==========-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.min.css" />
+    <!--========== JQUERY ==========-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!--========== JQUERY UI JS ==========-->
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!--========== JQUERY CONFIRM ==========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <!--========== POPPER JS ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!--========== BOOTSRAP CSS ==========-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--========== CUSTOM JAVASCRIPT ==========-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

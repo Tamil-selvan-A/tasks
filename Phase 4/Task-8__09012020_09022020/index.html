@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task-8</title>
+
+    <!--========== BOOTSTRAP CSS ==========-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--========== FONT AWESOME ==========-->
+    <script src="https://kit.fontawesome.com/d857be8293.js" crossorigin="anonymous"></script>
+
+    <!--========== GOOGLE FONT ==========-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!--========== CUSTOM CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!--========== MAIN ==========-->
+    <main>
+        <!--========== CHAT SECTION ==========-->
+        <section class="container-fluid pt-3">
+            <div class="row">
+                <!--========== USER ONE ==========-->
+                <div class="col mt-2 user mx-auto">
+                    <div class="d-flex bg-primary p-2 align-items-center user__header">
+                        <img src="assets/images/user-two.png" alt="user" class="mr-2">
+                        <div class="text-white">
+                            <h5 class="mb-0">Ramesh</h5>
+                            <small id="user-one-status">Online</small>
+                        </div>
+                    </div>
+                    <div class="user__body bg-dark text-white p-3">
+                        <div id="chat-one-messages">
+                        </div>
+                        <div class="user__input">
+                            <small class="mb-2 d-inline-block warning-hide" id="chat-one-empty">Plase Enter a Message</small>
+                            <form class="d-flex align-items-center" autocomplete="off">
+                                <input type="text" placeholder="Enter Message" class="form-control" id="input-one">
+                                <i class="fab fa-telegram fa-2x mx-3 send" id="send-one"></i>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--========== END USER ONE ==========-->
+
+                <!--========== USER TWO ==========-->
+                <div class="col mt-2 user mx-auto">
+                    <div class="d-flex bg-primary p-2 align-items-center user__header">
+                        <img src="assets/images/user-one.png" alt="user" class="mr-2">
+                        <div class="text-white">
+                            <h5 class="mb-0">Kumar</h5>
+                            <small id="user-two-status">Online</small>
+                        </div>
+                    </div>
+                    <div class="user__body bg-dark text-white p-3">
+                        <div id="chat-two-messages">
+                        </div>
+                        <div class="user__input">
+                            <small class="mb-2 warning-hide d-inline-block" id="chat-two-empty">Plase Enter a Message</small>
+                            <form class="d-flex align-items-center" autocomplete="off">
+                                <input type="text" placeholder="Enter Message" class="form-control" id="input-two" autocomplete="off">
+                                <i class="fab fa-telegram fa-2x mx-3 send" id="send-two"></i>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--========== END USER TWO ==========-->
+            </div>
+        </section>
+        <!--========== END CHAT SECTION ==========-->
+    </main>
+    <!--========== END MAIN ==========-->
+
+    <!--========== FOOTER ==========-->
+    <footer>
+
+    </footer>
+    <!--========== END FOOTER ==========-->
+
+    <!--========== BOOTSTRAP JAVASCRIPT ==========-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--========== END BOOTSTRAP JAVASCRIPT ==========-->
+
+    <!--========== CUSTOM JAVASCRIPT ==========-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

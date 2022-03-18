@@ -1,0 +1,38 @@
+@import 'mixins/breakpoints'; // PARTIALS
+
+/*==========  SECTION ==========*/
+* {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+.logo {
+    width: 80px;
+}
+.card {
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.3s;
+    }
+}
+i {
+    cursor: pointer;
+}
+/*========== END SECTION ==========*/
+
+/*========== CART SECTION ==========*/
+#cart {
+    img {
+        width: 80px;
+        border-radius: 6px;
+    }
+}
+table {
+    td {
+        vertical-align: middle !important;
+    }
+    input {
+        border: none;
+        outline: none;
+    }
+}
+/*========== END CART SECTION ==========*/

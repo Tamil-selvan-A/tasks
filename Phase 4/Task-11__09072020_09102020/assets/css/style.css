@@ -1,0 +1,38 @@
+/*==========  SECTION ==========*/
+* {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.logo {
+  width: 80px;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+i {
+  cursor: pointer;
+}
+
+/*========== END SECTION ==========*/
+/*========== CART SECTION ==========*/
+#cart img {
+  width: 80px;
+  border-radius: 6px;
+}
+
+table td {
+  vertical-align: middle !important;
+}
+
+table input {
+  border: none;
+  outline: none;
+}
+
+/*========== END CART SECTION ==========*/

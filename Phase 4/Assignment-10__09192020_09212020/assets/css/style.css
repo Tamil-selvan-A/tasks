@@ -1,0 +1,45 @@
+/*========== SECTION ==========*/
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.drag-drop-container {
+  max-width: 800px;
+}
+
+.format {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 42px;
+  background: #94deeb;
+  border: 3px solid #015e9c;
+}
+
+#file-input {
+  display: none;
+}
+
+.drop {
+  border: 3px solid transparent;
+}
+
+i {
+  cursor: pointer;
+}
+
+.file-name {
+  word-break: break-all;
+}
+
+.file-details-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+th {
+  font-weight: normal;
+}
+
+/*========== END SECTION ==========*/

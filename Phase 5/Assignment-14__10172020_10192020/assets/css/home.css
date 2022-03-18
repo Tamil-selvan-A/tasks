@@ -1,0 +1,29 @@
+/*========== BASE STYLES ==========*/
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+i {
+  cursor: pointer;
+}
+
+/*========== END BASE STYLES ==========*/
+/*========== CART SECTION ==========*/
+.cart img {
+  width: 100px;
+}
+
+td {
+  vertical-align: middle !important;
+}
+
+th {
+  font-weight: 500;
+}
+
+input[type=number] {
+  outline: none;
+  background-color: transparent;
+}
+
+/*========== END CART SECTION ==========*/

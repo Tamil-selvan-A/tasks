@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-8 (shopping cart)</title>
+
+    <!--========== BOOTSTRAP CSS ==========-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--========== FONT AWESOME ==========-->
+    <script src="https://kit.fontawesome.com/d857be8293.js" crossorigin="anonymous"></script>
+
+    <!--========== CUSTOM CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="bg-light shadow mb-4 sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light container-lg">
+            <a class="navbar-brand"><img src="assets/images/logo.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active mx-4">
+                        <a class="nav-link font-weight-bold btn btn-warning" href="#shop">SHOP NOW<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold text-center" href="#cart">CART <span id="cart-count"
+                                class="badge badge-primary">0</span> <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--========== END HEADER ==========-->
+
+    <!--========== MAIN ==========-->
+    <main class="container-lg">
+        <!--========== TODAY SPECIAL SECTION ==========-->
+        <section id="shop">
+            <h3 class="pt-3 text-center">TODAY SPECIAL</h3>
+            <div class="cards-container row py-3">
+                <div class="col-md-6 col-lg-3 p-4 p-lg-2">
+                    <div class="card shadow">
+                        <img src="assets/images/product-one.jpg" class="card-img-top img-fluid" alt="product">
+                        <div class="card-body">
+                            <h5 class="card-title border-top border-bottom py-2 name">WATCH</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card- text-secondary mb-0 mr-3"><small>FASHION</small></p>
+                                <small class="badge badge-warning">23% off</small>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet.</p>
+                            <p class="font-weight-bold card-text">Rs: <span class="price">2000</span></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary add-to-cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 p-4 p-lg-2">
+                    <div class="card shadow">
+                        <img src="assets/images/product-two.jpg" class="card-img-top img-fluid" alt="product">
+                        <div class="card-body">
+                            <h5 class="card-title border-top border-bottom py-2 name">SCHOOL BAG</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card- text-secondary mb-0 mr-3"><small>TRAVEL</small></p>
+                                <small class="badge badge-warning">8% off</small>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet.</p>
+                            <p class="font-weight-bold card-text">Rs: <span class="price">450</span></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary add-to-cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 p-4 p-lg-2">
+                    <div class="card shadow">
+                        <img src="assets/images/product-three.jpg" class="card-img-top img-fluid" alt="product">
+                        <div class="card-body">
+                            <h5 class="card-title border-top border-bottom py-2 name">MENS SHOE</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card- text-secondary mb-0 mr-3"><small>FASHION</small></p>
+                                <small class="badge badge-warning">17% off</small>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet.</p>
+                            <p class="font-weight-bold card-text">Rs: <span class="price">2500</span></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary add-to-cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 p-4 p-lg-2">
+                    <div class="card shadow">
+                        <img src="assets/images/product-four.jpg" class="card-img-top img-fluid" alt="product">
+                        <div class="card-body">
+                            <h5 class="card-title border-top border-bottom py-2 name">MEN'S SHIRT</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card- text-secondary mb-0 mr-3"><small>DRESSES</small></p>
+                                <small class="badge badge-warning">24% off</small>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet.</p>
+                            <p class="font-weight-bold card-text">Rs: <span class="price">600</span></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary add-to-cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========== END ODAY SPECIAL SECTION ==========-->
+
+        <!--========== HOT COLLECTIONS SECTION ==========-->
+        <section class="mt-5">
+            <h3 class="pt-3 text-center">HOT COLLECTIONS</h3>
+            <div class="cards-container row py-3">
+                <div class="col-md-6 col-lg-3 p-4 p-lg-2">
+                    <div class="card shadow">
+                        <img src="assets/images/hot-collection-one.jpg" class="card-img-top img-fluid" alt="bag">
+                        <div class="card-body">
+                            <h5 class="card-title border-top border-bottom py-2 name">TRAVEL BAG</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card- text-secondary mb-0 mr-3"><small>TRAVEL</small></p>
+                                <small class="badge badge-warning">8% off</small>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet.</p>
+                            <p class="font-weight-bold card-text">Rs: <span class="price">300</span></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary add-to-cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 p-4 p-lg-2">
+                    <div class="card shadow">
+                        <img src="assets/images/hot-collection-two.jpg" class="card-img-top img-fluid" alt="bag">
+                        <div class="card-body">
+                            <h5 class="card-title border-top border-bottom py-2 name">SPORTS SHOE</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card- text-secondary mb-0 mr-3"><small>SPORTS</small></p>
+                                <small class="badge badge-warning">50% off</small>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet.</p>
+                            <p class="font-weight-bold card-text">Rs: <span class="price">800</span></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary add-to-cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 p-4 p-lg-2">
+                    <div class="card shadow">
+                        <img src="assets/images/hot-collection-three.jpg" class="card-img-top img-fluid" alt="bag">
+                        <div class="card-body">
+                            <h5 class="card-title border-top border-bottom py-2 name">PARTY DRESS</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card- text-secondary mb-0 mr-3"><small>DRESS</small></p>
+                                <small class="badge badge-warning">33% off</small>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet.</p>
+                            <p class="font-weight-bold card-text">Rs: <span class="price">600</span></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary add-to-cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 p-4 p-lg-2">
+                    <div class="card shadow">
+                        <img src="assets/images/hot-collection-four.jpg" class="card-img-top img-fluid" alt="bag">
+                        <div class="card-body">
+                            <h5 class="card-title border-top border-bottom py-2 name">CAMERA GLASS</h5>
+                            <div class="d-flex align-items-center">
+                                <p class="card- text-secondary mb-0 mr-3"><small>ELECTRONICS</small></p>
+                                <small class="badge badge-warning">12% off</small>
+                            </div>
+                            <p class="my-3">Lorem ipsum dolor sit amet.</p>
+                            <p class="font-weight-bold card-text">Rs: <span class="price">950</span></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary add-to-cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========== END HOT COLLECTIONS SECTION ==========-->
+
+        <!--========== CART SECTION ==========-->
+        <section class="py-5" id="cart">
+            <h3 class="py-4 text-center">YOUR CART</h3>
+            <div id="cart-container">
+            </div>
+            <p class="text-center font-weight-bold my-4 border-top p-3 bg-success text-white">Total Rs: <span
+                    id="cart-total">0</span>
+            </p>
+        </section>
+        <!--========== END CART SECTION ==========-->
+    </main>
+    <!--========== END MAIN ==========-->
+
+    <!--========== BOOTSTRAP JAVASCRIPT ==========-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--========== END BOOTSTRAP JAVASCRIPT ==========-->
+
+    <!--========== CUSTOM JAVASCRIPT ==========-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

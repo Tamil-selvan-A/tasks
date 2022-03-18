@@ -1,0 +1,19 @@
+/*========== SECTION ==========*/
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+table {
+  white-space: nowrap;
+}
+
+.table th {
+  border-top: none;
+  font-weight: normal;
+}
+
+.filter {
+  white-space: nowrap;
+}
+
+/*========== END SECTION ==========*/

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task-4</title>
+
+    <!--========== BOOTSTRAP CSS ==========-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--========== FONT AWESOME ==========-->
+    <script src="https://kit.fontawesome.com/d857be8293.js" crossorigin="anonymous"></script>
+
+    <!--========== CUSTOM CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--========== MAIN ==========-->
+    <main class="bg-dark  text-center">
+        <h2 class="text-warning p-4">Task One</h2>
+        <!--========== ASCENDING DESCENDING SECTION ==========-->
+        <section class="container border-bottom border-secondary mb-4 py-3 rounded">
+            <h3 class="text-dark p-4">1. ASCENDING AND DESCENDING ORDER OF INTERGERS</h3>
+            <p class="p-3">Array of five numbers 4, 9, 5, 7,1</p>
+            <p id="ascending" class="bg-primary p-3 d-inline-block m-3 text-white"></p>
+            <p id="descending" class="bg-primary p-3 d-inline-block m-3 text-white"></p>
+        </section>
+        <!--========== END ASCENDING DESCENDING SECTION ==========-->
+
+        <!--========== LAST ITEM OF ARRAY SECTION ==========-->
+        <section class="container border-bottom border-secondary mb-4 py-3">
+            <h3 class="text-dark p-4">2. DISPLAY LAST ITEM OF AN ARRAY</h3>
+            <p>Array : [ 'A', 'B', 'C', 'D' ]</p>
+            <p id="last-item"></p>
+        </section>
+        <!--========== END LAST ITEM OF ARRAY SECTION ==========-->
+
+        <!--========== INSERT ONE NUMBER ==========-->
+        <section class="container border-bottom border-secondary mb-4 py-3">
+            <h3 class="text-dark p-4">3. INSERT ONE NUMBER IN MIDDLE OF 2nd & 3rd NUMBER</h3>
+            <p id="fruits">Array : [ 'apple', 'orange', 'mango', 'banana' ]</p>
+            <p id="insert-output" class="bg-primary p-3 d-inline-block m-3 text-white"></p>
+        </section>
+        <!--========== END INSERT ONE NUMBER ==========-->
+
+        <!--==========  REMOVE LAST ELEMENT IN ARRAY ==========-->
+        <section class="container border-bottom border-secondary mb-4 py-3">
+            <h3 class="text-dark p-4">4. REMOVE LAST ELEMENT IN ARRAY</h3>
+            <p id="mobile">Array : [ 'samsung', 'nokia', 'redmi', 'realme' ]</p>
+            <p id="remove-last-output" class="bg-primary p-3 d-inline-block m-3 text-white"></p>
+        </section>
+        <!--========== END REMOVE LAST ELEMENT IN ARRAY ==========-->
+
+        <!--========== FORM ==========-->
+        <section class="py-5">
+            <h2 class="text-primary p-4">Task Two</h2>
+            <h3 class="py-5 text-uppercase">Register Form</h3>
+            <form class="p-4 mx-auto bg-light rounded">
+                <div class="my-4">
+                    <input type="text" placeholder="Enter Your Name" class="form-control" id="name">
+                    <span class="d-block text-left p-2" id="name-error"></span>
+                </div>
+                <div class="my-4">
+                    <input type="mail" placeholder="Enter Email" class="form-control" id="email">
+                    <span class="d-block text-left p-2" id="email-error"></span>
+                </div>
+                <div class="my-4">
+                    <input type="text" placeholder="Enter Your Age" class="form-control" id="age">
+                    <span class="d-block text-left p-2" id="age-error"></span>
+                </div>
+                <div class="my-4">
+                    <select id="gender" class="form-control">
+                        <option value="male">I am Male</option>
+                        <option value="female">I am Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="my-4">
+                    <label for="register-date" class="text-left d-block p-2">Enter Register Date</label>
+                    <input type="date" class="form-control" id="register-date">
+                    <span class="d-block text-left p-2" id="register-date-error"></span>
+                </div>
+                <input type="button" id="submit" class="btn btn-primary" value="SUBMIT">
+            </form>
+
+            <!--========== CARDS SECTION ==========-->
+            <h3 class="py-5 text-uppercase" id="ff">form data in card</h3>
+            <div class="d-flex flex-wrap justify-content-center py-3" id="cards-container"></div>
+            <!--========== END CARDS SECTION ==========-->
+        </section>
+        <!--========== END FORM SECTION ==========-->
+    </main>
+    <!--========== END MAIN ==========-->
+
+    <!--========== BOOTSTRAP JAVASCRIPT ==========-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--========== END BOOTSTRAP JAVASCRIPT ==========-->
+
+    <!--========== CUSTOM JAVASCRIPT ==========-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

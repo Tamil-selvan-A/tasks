@@ -1,0 +1,30 @@
+/*========== SECTION ==========*/
+header .logo {
+  width: 100px;
+}
+
+.card {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart img {
+  width: 100px;
+}
+
+.cart input {
+  width: 70px;
+}
+
+.cart p {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.cart i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/*========== END SECTION ==========*/

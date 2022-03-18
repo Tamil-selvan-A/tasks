@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task-5</title>
+
+    <!--========== BOOTSTRAP CSS ==========-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--========== FONT AWESOME ==========-->
+    <script src="https://kit.fontawesome.com/d857be8293.js" crossorigin="anonymous"></script>
+
+    <!--========== CUSTOM CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--========== MAIN ==========-->
+    <main>
+        <!--========== FORM SECTION ==========-->
+        <section class="bg-dark py-5 text-center">
+            <h3 class="text-white p-4">FORM VALIDATIONS</h3>
+            <form class="form mx-auto p-4 rounded" id="form">
+                <div class="m-3">
+                    <input type="text" class="form-control mx-auto" placeholder=" Enter Your Name" id="name">
+                    <small id="name-error"></small>
+                </div>
+                <div class="m-3">
+                    <input type="text" class="form-control mx-auto" placeholder=" Enter Your Email" id="email">
+                    <small id="email-error"></small>
+                </div>
+                <div class="m-3">
+                    <input type="password" class="form-control mx-auto" placeholder=" Enter Your Password"
+                        id="password">
+                    <small id="password-error"></small>
+                </div>
+                <div class="m-3">
+                    <input type="password" class="form-control mx-auto" placeholder=" Retype Your Password"
+                        id="retype-password">
+                    <small id="retype-password-error"></small>
+                </div>
+                <div class="m-3 mb-5">
+                    <select id="gender" class="form-control mx-auto">
+                        <option value="male">I am Male</option>
+                        <option value="male">I am Female</option>
+                        <option value="male">Other</option>
+                    </select>
+                </div>
+                <div class="m-3">
+                    <label class="text-white d-block text-left">Select Language</label>
+                    <div class="d-flex justify-content-between px-5 py-2 rounded bg-light">
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="tamil" value="Tamil">
+                            <label class="mb-0" for="tamil">Tamil</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="english" value="English">
+                            <label class="mb-0" for="english">English</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="telugu" value="Telgu">
+                            <label class="mb-0" for="telugu">Telugu</label>
+                        </div>
+                    </div>
+                    <small id="language-error"></small>
+                </div>
+                <div class="m-3">
+                    <label class="text-white d-block text-left">Select Your Skils</label>
+                    <div class="d-flex justify-content-between px-5 py-2 rounded bg-light">
+                        <div>
+                            <input type="radio" class="form-check-input" id="html" value="HTML">
+                            <label class="mb-0" for="html">HTML</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="form-check-input" id="css" value="CSS">
+                            <label class="mb-0" for="css">CSS</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="form-check-input" id="js" value="JS">
+                            <label class="mb-0" for="js">Javascript</label>
+                        </div>
+                    </div>
+                    <small id="skil-error"></small>
+                </div>
+                <div class="m-3">
+                    <label class="text-white d-block text-left" for="dob">Enter Your Date of Birth</label>
+                    <input type="date" class="form-control mx-auto" id="dob">
+                    <small id="dob-error"></small>
+                </div>
+                <div class="m-3">
+                    <input type="tel" class="form-control mx-auto" placeholder=" Enter Your Mobile Number" id="mobile">
+                    <small id="mobile-error"></small>
+                </div>
+                <div class="m-3">
+                    <textarea class="form-control mx-auto" placeholder=" Enter Your Message" id="message"></textarea>
+                    <small id="message-error"></small>
+                </div>
+                <div class="d-flex">
+                    <div class="col">
+                        <input type="submit" class="form-control btn btn-warning font-weight-bold" value="SUBMIT" id="submit">
+                    </div>
+                    <div class="col">
+                        <input type="reset" class="form-control btn btn-warning font-weight-bold" value="RESET">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!--========== END FORM SECTION ==========-->
+
+        <!--========== TABLE SECTION ==========-->
+            <section class="table-responsive py-5 px-3 bg-dark text-center">
+                <h3 class="text-white p-4">FORM DATA</h3>
+                <table class="table table-dark table-bordered table-hover table-stipped" id="table">
+                   <thead>
+                   <tr>
+                       <th>NAME</th>
+                       <th>EMAIL</th>
+                       <th>PASSWORD</th>
+                       <th>GENDER</th>
+                       <th>LANGUAGE</th>
+                       <th>SKILS</th>
+                       <th>DOB</th>
+                       <th>MOBILE</th>
+                       <th>MESSAGE</th>
+                   </tr>
+                   </thead>
+                   <tbody id="tbody">
+                   </tbody>
+                </table>
+            </section>
+        <!--========== END TABLE SECTION ==========-->
+
+    </main>
+    <!--========== END MAIN ==========-->
+
+    <!--========== BOOTSTRAP JAVASCRIPT ==========-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--========== END BOOTSTRAP JAVASCRIPT ==========-->
+
+    <!--========== CUSTOM JAVASCRIPT ==========-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

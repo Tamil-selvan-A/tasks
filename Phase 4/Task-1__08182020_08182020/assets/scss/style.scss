@@ -1,0 +1,30 @@
+/*========== FORM ==========*/
+body {
+    background-color: #0e0e0e;
+    text-align: center;
+    font-family: sans-serif;
+}
+h1 {
+    color: #fff;
+}
+form {
+    background: #1d1d1d;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    input {
+        padding: 10px;
+        margin: 20px;
+        display: block;
+        margin: 20px auto;
+    }
+}
+#output {
+    padding: 20px;
+    background: #2e0101;
+    color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    font-size: 40px;
+}
+/*========== FORM ==========*/

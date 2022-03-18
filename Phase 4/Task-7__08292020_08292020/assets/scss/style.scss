@@ -1,0 +1,28 @@
+@import 'mixins/breakpoints'; // PARTIALS
+
+/*========== TO DO LIST SECTION ==========*/
+section {
+    height: 100vh;
+}
+.container {
+    min-width: 400px;
+}
+i {
+    cursor: pointer;
+}
+li {
+    border-bottom: 1px solid #e6e6e6;
+}
+.list-body {
+    min-height: 55vh;
+    max-height: 55vh;
+    overflow-y: scroll;
+}
+.remove {
+    display: none !important;
+}
+.checked-list {
+    text-decoration: line-through;
+    color: #666666;
+}
+/*========== END TO DO LIST SECTION ==========*/

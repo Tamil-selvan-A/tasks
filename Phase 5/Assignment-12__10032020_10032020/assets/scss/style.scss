@@ -1,0 +1,37 @@
+
+/*========== FORM SECTION ==========*/
+body {
+    background: #282a2b;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+form  {
+    max-width: 500px;
+    background: #232323;
+    border: 2px solid #009688;
+    label {
+        color: #ffffff;
+        font-weight: 300;
+    }
+    input {
+        background: transparent !important;
+        border-radius: 0 !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-color: #494949 !important;
+        color: #ffffff !important;
+        outline: none !important;
+    }
+    ::placeholder {
+        font-weight: 300;
+        opacity: 1;
+        color: #cccccc !important;
+
+    }
+    input[type=submit] {
+        background-color: #fdfdfd !important;
+
+    }
+}
+/*========== END FORM SECTION ==========*/

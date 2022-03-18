@@ -1,0 +1,31 @@
+@import 'mixins/breakpoints'; // PARTIALS
+
+/*========== SECTION ==========*/
+body {
+    background: rgba($color: #000000, $alpha: 0.5) url('../images/background.jpg') center/cover no-repeat fixed;  
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+}
+.form {
+    max-width: 500px;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    backdrop-filter: blur(15px);
+
+    h4 {
+        background-color: rgba($color: #ffffff, $alpha: 0.7);
+    }
+}
+td {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 15px;
+}
+th {
+    font-weight: normal ;
+}
+.table-container {
+ max-height: 90vh;
+ overflow: auto;   
+}
+
+/*========== END SECTION ==========*/

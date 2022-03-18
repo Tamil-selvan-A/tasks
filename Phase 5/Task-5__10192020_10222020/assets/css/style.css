@@ -1,0 +1,22 @@
+/*========== SECTION ==========*/
+body {
+  font-family: 'rubik', sans-serif;
+}
+
+form {
+  max-width: 800px;
+}
+
+form small {
+  position: absolute;
+}
+
+form .form-control {
+  border: none;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+/*========== END SECTION ==========*/

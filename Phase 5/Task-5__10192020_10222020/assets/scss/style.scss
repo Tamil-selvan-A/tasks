@@ -1,0 +1,20 @@
+@import 'mixins/breakpoints'; // PARTIALS
+
+/*========== FORM SECTION ==========*/
+body {
+    font-family: 'rubik', sans-serif;
+}
+form {
+    max-width: 800px;
+    small {
+        position: absolute;
+    }
+    .form-control {
+        border: none;
+        background-color: #e6e6e6;
+        border-radius: 20px;
+        padding-left: 30px;
+        font-size: 15px;
+    }
+}
+/*========== END FORM SECTION ==========*/

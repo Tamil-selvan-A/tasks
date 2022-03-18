@@ -1,0 +1,51 @@
+/*========== CARDS SECTION ==========*/
+.container {
+    background: #eeeeee;
+    h1 {
+        color: #EF7797;
+        font-family: 'Lobster', cursive;
+        small {
+            color: #000000;
+        }
+    }
+}
+.form-control {
+    max-width: 50%;
+}
+.input-group>.form-control {
+    width: 50%;
+}
+.input-group-text  {
+    background: #EF7797;
+     i {
+         color: #000000;
+     }
+}
+a, p {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+}
+.top-nav {
+    a {
+        border: 2px solid;
+    }
+}
+.card {
+    max-width: 280px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+.card-container {
+    overflow: hidden;
+}
+.add-card {
+    transition: all 0.4s;
+    transform: scale(1);
+    position: static;
+}
+.remove-card {
+    transform: scale(0);
+    transition: all 0.4s;
+    position: absolute;
+}
+/*========== END CARDS SECTION ==========*/

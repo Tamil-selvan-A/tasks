@@ -1,0 +1,30 @@
+/*========== SECTION ==========*/
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.slider-container {
+  height: 80vh;
+  overflow: hidden;
+}
+
+i {
+  cursor: pointer;
+}
+
+.drag-drop div p {
+  cursor: pointer;
+  z-index: 100;
+  white-space: nowrap;
+}
+
+.drag-drop div:hover {
+  background-color: #6e6e6e !important;
+}
+
+form, .progress {
+  max-width: 600px;
+}
+
+/*========== END SECTION ==========*/

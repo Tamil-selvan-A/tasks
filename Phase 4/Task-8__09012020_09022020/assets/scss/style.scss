@@ -1,0 +1,48 @@
+@import 'mixins/breakpoints'; // PARTIALS
+
+/*========== CHAT SECTION ==========*/
+i {
+    cursor: pointer;
+}
+body {
+    background: #1b1b1b;
+}
+.user {
+    max-width: 450px;
+    &__header {
+        img {
+            width: 50px;
+        }
+    }
+    &__body {
+        height: 80vh;
+        position: relative;
+        p {
+            background: #ffffff;
+            color: #000000;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin: 12px 6px;
+            font-family: 'Montserrat', sans-serif;
+            small {
+                font-size: 11px;
+                align-self: flex-end;
+            }
+        }
+    }
+    &__input {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        input {
+            width: 75%;
+        }
+    }
+}
+.warning-show {
+    display: block;
+}
+.warning-hide {
+    display: none !important;
+}
+/*========== END CHAT SECTION ==========*/

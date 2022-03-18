@@ -1,0 +1,262 @@
+/*========== DIGITAL CLOCK SECTION ==========*/
+section {
+  height: 100vh;
+  background: #151f27;
+}
+
+.digital-clock {
+  background-color: #28272f;
+  border: 6px solid #444147;
+  -webkit-box-shadow: 0 0 10px 4px inset;
+          box-shadow: 0 0 10px 4px inset;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.digital-clock p, .digital-clock span {
+  font-family: 'Arvo', serif;
+  font-size: 40px;
+  padding: 4px;
+  color: #02d0bc;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .digital-clock p, .digital-clock span {
+    font-size: 60px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .digital-clock {
+    width: 450px;
+  }
+}
+
+.date-container p, .date-container span {
+  font-size: 16px;
+  padding: 10px 4px;
+  color: #8bc34a;
+}
+
+@media (min-width: 576px) {
+  .date-container p, .date-container span {
+    font-size: 20px;
+  }
+}
+
+#meridiem {
+  font-size: 24px;
+}
+
+/*========== END DIGITAL CLOCK SECTION ==========*/
+/*========== ANALOG CLOCK SECTION ==========*/
+.analog-clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #fcfcfc;
+  border-radius: 50%;
+  border: 7px solid #03A9F4;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0px 0px 6px 1px black;
+          box-shadow: inset 0px 0px 6px 1px black;
+}
+
+.number {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #2c5a56;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.number-one {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.number-one p {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.number-two {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.number-two p {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.number-three {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.number-three p {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.number-four {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.number-four p {
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+.number-five {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+.number-five p {
+  -webkit-transform: rotate(-150deg);
+          transform: rotate(-150deg);
+}
+
+.number-six {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.number-six p {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.number-seven {
+  -webkit-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+
+.number-seven p {
+  -webkit-transform: rotate(-210deg);
+          transform: rotate(-210deg);
+}
+
+.number-eight {
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+.number-eight p {
+  -webkit-transform: rotate(-240deg);
+          transform: rotate(-240deg);
+}
+
+.number-nine {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.number-nine p {
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+}
+
+.number-ten {
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+}
+
+.number-ten p {
+  -webkit-transform: rotate(-300deg);
+          transform: rotate(-300deg);
+}
+
+.number-eleven {
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg);
+}
+
+.number-eleven p {
+  -webkit-transform: rotate(-330deg);
+          transform: rotate(-330deg);
+}
+
+.number-twelve {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.number-twelve p {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.center-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #000000;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.hand {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hand div {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  background: #000000;
+}
+
+.analog-hours {
+  width: 5px;
+  height: 60px;
+}
+
+.analog-minutes {
+  width: 4px;
+  height: 80px;
+}
+
+.analog-seconds {
+  width: 2px;
+  height: 100px;
+}
+
+.show {
+  width: 100%;
+  position: static;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hide {
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+/*========== END  ANALOG CLOCK SECTION ==========*/

@@ -1,0 +1,56 @@
+/*========== CHAT SECTION ==========*/
+i {
+  cursor: pointer;
+}
+
+body {
+  background: #1b1b1b;
+}
+
+.user {
+  max-width: 450px;
+}
+
+.user__header img {
+  width: 50px;
+}
+
+.user__body {
+  height: 80vh;
+  position: relative;
+}
+
+.user__body p {
+  background: #ffffff;
+  color: #000000;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin: 12px 6px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.user__body p small {
+  font-size: 11px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.user__input {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.user__input input {
+  width: 75%;
+}
+
+.warning-show {
+  display: block;
+}
+
+.warning-hide {
+  display: none !important;
+}
+
+/*========== END CHAT SECTION ==========*/

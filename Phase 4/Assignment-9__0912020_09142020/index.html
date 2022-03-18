@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 9 (photo collage)</title>
+
+    <!--========== BOOTSTRAP CSS ==========-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--========== FONT AWESOME ==========-->
+    <script src="https://kit.fontawesome.com/d857be8293.js" crossorigin="anonymous"></script>
+
+    <!--========== JQUERY CONFIRM CSS ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+
+    <!--========== CUSTOM CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--========== MAIN ==========-->
+    <main class="container bg-light">
+        <!--========== DRAG SECTION ==========-->
+        <section class="p-5 text-center">
+            <h5 class="text-center bg-success p-3 text-white mb-5">IMAGES</h5>
+            <div class="frame drag">
+                <img src="assets/images/image-one.jpg" alt="photo college" class="img-fluid" draggable="true">
+                <img src="assets/images/image-two.jpg" alt="photo college" class="img-fluid" draggable="true">
+                <img src="assets/images/image-three.jpg" alt="photo college" class="img-fluid" draggable="true">
+                <img src="assets/images/image-four.jpg" alt="photo college" class="img-fluid" draggable="true">
+                <img src="assets/images/image-five.jpg" alt="photo college" class="img-fluid" draggable="true">
+            </div>
+        </section>
+        <!--========== END DRAG SECTION ==========-->
+
+        <!--========== DROP SECTION ==========-->
+        <section>
+            <h5 class="text-center bg-success p-3 text-white">DROP IMAGES HERE</h5>
+            <div class="drop my-4 bg-white py-3 px-5" id="drop">
+                <div class="row">
+                    <div class="col-md-4 frame border-right border-bottom">
+
+                    </div>
+                    <div class="col-md-4 frame border-bottom border-right">
+
+                    </div>
+                    <div class="col-md-4 frame border-bottom">
+
+                    </div>
+                    <div class="col-md-6 frame border-right">
+
+                    </div>
+                    <div class="col-md-6 frame">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========== END DROP SECTION ==========-->
+    </main>
+    <!--========== END MAIN ==========-->
+
+    <!--========== JQUERY ==========-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!--========== JQUERY CONFIRM ==========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <!--========== POPPER JS ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!--========== BOOTSRAP JS ==========-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--========== CUSTOM JAVASCRIPT ==========-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
